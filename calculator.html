@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+</head>
+
+<body>
+    Enter First Value: <input type="text" id="v1">
+    <br>
+    Enter Second Value: <input type="text" id="v2">
+    <br>
+    Answer: <input type="text" id="answer1">
+    <br>
+    <h1 id="answer2"> </h1>
+
+
+    <input type="button" value="Add" onclick="sum()" onmouseover="sum()">
+    <input type="button" value="Subtract" onclick="subtract()" onmouseover="subtract()">
+    <input type="button" value="Multiply" onclick="multiply()" onmouseover="multiply()">
+    <input type="button" value="Divide" onclick="divide()" onmouseover="divide()">
+
+    <script>
+        function sum() {
+            var v1 = document.getElementById("v1");
+            var v2 = document.getElementById("v2");
+            var answer1 = document.getElementById("answer1");
+            var answer2 = document.getElementById("answer2");
+
+            // var ans = v1.value + v2.value;  //not use because it use the string data type values
+            // var ans = parseInt(v1.value) + parseInt(v2.value); //store only int data type values not float type
+            var ans = parseFloat(v1.value) + parseFloat(v2.value);  //pick all type of values like int and float also
+            // console.log(typeof (ans));
+            // console.log(typeof (v1));
+            answer1.value = ans;
+            answer2.innerHTML = ans;
+
+        }
+
+        function subtract() {
+            var v1 = document.getElementById("v1");
+            var v2 = document.getElementById("v2");
+            var answer1 = document.getElementById("answer1");
+            var answer2 = document.getElementById("answer2");
+
+            // var ans = v1.value + v2.value;  //not use because it use the string data type values
+            // var ans = parseInt(v1.value) + parseInt(v2.value); //store only int data type values not float type
+            var ans = parseFloat(v1.value) - parseFloat(v2.value);  //pick all type of values like int and float also
+            // console.log(typeof (ans));
+            answer1.value = ans;
+            answer2.innerHTML = ans;
+        }
+
+        function multiply() {
+            var v1 = document.getElementById("v1");
+            var v2 = document.getElementById("v2");
+            var answer1 = document.getElementById("answer1");
+            var answer2 = document.getElementById("answer2");
+
+            // var ans = v1.value + v2.value;  //not use because it use the string data type values
+            // var ans = parseInt(v1.value) + parseInt(v2.value); //store only int data type values not float type
+            var ans = parseFloat(v1.value) * parseFloat(v2.value);  //pick all type of values like int and float also
+            // console.log(typeof (ans));
+            answer1.value = ans;
+            answer2.innerHTML = ans;
+        }
+
+        function divide() {
+            var v1 = document.getElementById("v1");
+            var v2 = document.getElementById("v2");
+            var answer1 = document.getElementById("answer1");
+            var answer2 = document.getElementById("answer2");
+
+            // var ans = v1.value + v2.value;  //not use because it use the string data type values
+            // var ans = parseInt(v1.value) + parseInt(v2.value); //store only int data type values not float type
+            var ans = parseFloat(v1.value) / parseFloat(v2.value);  //pick all type of values like int and float also
+            // console.log(typeof (ans));
+            answer1.value = ans;
+            answer2.innerHTML = ans;
+        }
+    </script>
+</body>
+
+</html>

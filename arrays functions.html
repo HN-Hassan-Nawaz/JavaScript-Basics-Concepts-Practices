@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays functions</title>
+    <script>
+        // break function
+        function br() {
+            document.write("<br>");
+        }
+
+        var pls = ["html", "CSS", "Java script", "React", "Php", "C++", "Java"];
+
+        document.write(pls.join(" "));
+        br();
+        // push function
+        pls.push("Python");
+        pls.push("AI");
+        document.write(pls.join(" "));
+
+        // pop function
+        var p = pls.pop();
+        br();
+        document.write("Remove item is : " + p);
+        br();
+        document.write(pls.join(" "));
+        br();
+        // console.log(pls);
+        // //delete any element
+        // delete pls[4];
+        // br();
+        // console.log(pls);
+
+        //sorted array
+        document.write("<b>Array before sorting : </b>" + pls.join(" "));
+        br();
+        pls.sort();
+        document.write("<b>Array after sorting : </b>" + pls.join(" "));
+
+        //reverse array
+        br();
+        pls.reverse();
+        document.write("<b>Array before reverse : </b>" + pls.join(" "));
+        br();
+        pls.reverse();
+        document.write("<b>Array after reverse : </b>" + pls.join(" "));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

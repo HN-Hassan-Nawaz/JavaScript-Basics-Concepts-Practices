@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Events</title>
+
+    <style>
+        .c1 {
+            color: red;
+            background-color: yellow;
+            font-size: 50px;
+            text-decoration: underline;
+        }
+
+        .c2 {
+            color: blueviolet;
+            background-color: firebrick;
+            font-size: 30px;
+            text-decoration: overline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML Working -->
+    <h1 onclick="changetexth1()">Lorem ipsum dolor sit amet.</h1>
+    <h2 id="i1" onmouseover="applyh2()" onmouseout="removeh2()">Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Tenetur, sequi.</h2>
+
+    <!-- javasecipt Working -->
+    <script>
+
+        function changetexth1() {
+            var heading1 = document.getElementsByTagName("h1");
+            heading1[0].innerHTML = "some new text through javasecipt";
+        }
+
+        function applyh2() {
+            var h2 = document.getElementById("i1");
+            h2.className = "c1";
+        }
+
+        function removeh2(){
+            var h2=document.getElementById("i1");
+            h2.className="c2";
+        }
+    </script>
+
+</body>
+
+</html>

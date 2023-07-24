@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function</title>
+    <script>
+        var str = "     welcome to capital university of science and technology islamabad/pakistan and islamabad    ";
+        // counting length of string
+        console.log("Length of string is = " + str.length);
+
+        // Upper case and Lower case
+        var str_lower = str.toLowerCase();
+        var str_upper = str.toUpperCase();
+        document.write("<b>Lower Case : </b>" + str_lower);
+        document.write("<br><b>Upper Case : </b>" + str_upper);
+
+        // trim the length of the string(ignore the start and end spaces of the string)
+        // lenght before trim the string
+        var length_before_trim = str.length;
+        console.log("Lenght before trim is = " + length_before_trim);
+
+        // length after trim the string
+        var str_trim = str.trim();
+        var length_after_trim = str_trim.length;
+        console.log("Length after trim the string is = " + length_after_trim);
+
+        //first search index 
+        var search = str.indexOf("islamabad");
+        console.log("(first search or mached) Searching position of index is = " + search);
+
+        // last search inde
+        var l_search = str.lastIndexOf("islamabad");
+        console.log("(last search or mached) Searching position of index is = " + l_search);
+
+        // word replacing
+        var replace=str.replace("islamabad", "Lahore");
+        console.log("Replace string is : "+ replace);
+
+        //split words
+        var words=str_trim.split(" ");
+        console.log(words);
+
+        //join words
+        console.log(words.join("-"));
+
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

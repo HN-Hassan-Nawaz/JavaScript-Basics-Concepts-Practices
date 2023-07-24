@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statment if else if else</title>
+    <script>
+        // less then 100 no concession
+        // 100 to 199 5% concession
+        // 200 to 499 10% concession
+        // 500 to 1000 15% concession
+        // greater then 1000 20% concession
+
+        var purchase = 150;
+        var discount = 0;
+
+        if (purchase < 100) {
+            discount = 0;
+        }
+        else if (purchase >= 100 && purchase <= 199) {
+            discount = 5;
+        }
+        else if (purchase >= 200 && purchase <= 499) {
+            discount = 10;
+        }
+        else if (purchase >= 500 && purchase <= 1000) {
+            discount = 15;
+        }
+        else {
+            discount = 20;
+        }
+
+        var cd = purchase * discount / 100;
+        console.log("Your discount is " + discount + "% = " + cd);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
